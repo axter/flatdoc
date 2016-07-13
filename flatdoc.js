@@ -205,7 +205,14 @@
           return highlight(code, lang);
         }
         return code;
-      }
+      },
+      gfm         : true,
+      tables      : true,
+      breaks      : true,
+      pedantic    : false,
+      sanitize    : false,  // 关闭忽略HTML标签，即开启识别HTML标签，默认为false
+      smartLists  : true,
+      smartypants : true
     });
   };
 
@@ -245,7 +252,7 @@
       var $el = $(this);
       var num = parseInt(this.nodeName[1]);
       var text = $el.text();
-      var slug = Flatdoc.slugify(text);
+      var slug = text;//Flatdoc.slugify(text);
       if (num > 1) slug = slugs[num - 2] + '-' + slug;
       slugs.length = num - 1;
       slugs = slugs.concat([slug, slug]);
