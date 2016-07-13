@@ -207,18 +207,7 @@ a:hover {
   font-style: italic;
   color: #9090aa;
 }
-.content code {
-  font-family: Menlo, monospace;
-  background: #f3f6fb;
-  padding: 1px 3px;
-  font-size: 0.95em;
-}
-.content pre > code {
-  display: block;
-  background: transparent;
-  font-size: 0.85em;
-  letter-spacing: -1px;
-}
+
 .content blockquote :first-child {
   padding-top: 0;
 }
@@ -403,66 +392,7 @@ body:not(.big-h3) .content h3 {
     padding-top: 10px;
   }
 }
-body.no-literate .content pre > code {
-  background: #f3f6fb;
-  border: solid 1px #e7eaee;
-  border-top: solid 1px #dbdde2;
-  border-left: solid 1px #e2e5e9;
-  display: block;
-  padding: 10px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  overflow: auto;
-}
-body.no-literate .content pre > code {
-  -webkit-overflow-scrolling: touch;
-}
-body.no-literate .content pre > code::-webkit-scrollbar {
-  width: 15px;
-  height: 15px;
-}
-body.no-literate .content pre > code::-webkit-scrollbar-thumb {
-  background: #ddd;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  border: solid 4px #f3f6fb;
-}
-body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
-  background: #999;
-  -webkit-box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
-  box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
-}
-@media (max-width: 1180px) {
-  .content pre > code {
-    background: #f3f6fb;
-    border: solid 1px #e7eaee;
-    border-top: solid 1px #dbdde2;
-    border-left: solid 1px #e2e5e9;
-    display: block;
-    padding: 10px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    overflow: auto;
-  }
-  .content pre > code {
-    -webkit-overflow-scrolling: touch;
-  }
-  .content pre > code::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
-  }
-  .content pre > code::-webkit-scrollbar-thumb {
-    background: #ddd;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    border: solid 4px #f3f6fb;
-  }
-  .content pre > code:hover::-webkit-scrollbar-thumb {
-    background: #999;
-    -webkit-box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
-    box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
-  }
-}
+
 .button {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -837,19 +767,7 @@ a.big.button:hover:visited {
   border-radius: 2px;
   background: #2badad;
 }
-code .string,
-code .number {
-  color: #3ac;
-}
-code .init {
-  color: #383;
-}
-code .keyword {
-  font-weight: bold;
-}
-code .comment {
-  color: #adadcc;
-}
+
 .large-brief .content > h1:first-child + p,
 .content > p.brief {
   font-size: 1.3em;
